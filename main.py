@@ -95,7 +95,7 @@ async def handle_open_response(request: ResponsesRequest, authorization: Optiona
 
         # Llamada asíncrona usando el SDK para no bloquear el servidor
         response = await client.aio.models.generate_content(
-            model="gemini-3.5-flash",
+            model="gemini-2.5-flash",
             contents=user_prompt,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
@@ -104,21 +104,26 @@ async def handle_open_response(request: ResponsesRequest, authorization: Optiona
         )
         
         output_text = response.text if response.text else "Lo siento, no pude procesar la respuesta en este momento."
+        
+        # Imprimir en consola de Render para verificar qué responde la IA
+        print(f"Respuesta generada: {output_text}")
 
-        # Retornar respuesta en JSON
+        # Estructura ajustada para asegurar compatibilidad de renderizado en frontend
         return {
             "id": f"resp_{uuid.uuid4().hex[:12]}",
             "object": "response",
-            "created_at": int(time.time()),
             "status": "completed",
             "output": [
                 {
                     "type": "message",
+                    "id": f"msg_{uuid.uuid4().hex[:8]}",
+                    "status": "completed",
                     "role": "assistant",
                     "content": [
                         {
-                            "type": "text",
-                            "text": output_text
+                            "type": "output_text",
+                            "text": output_text,
+                            "annotations": []
                         }
                     ]
                 }
