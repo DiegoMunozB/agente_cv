@@ -21,7 +21,7 @@ La integración se diseñó bajo los siguientes pilares:
 ### 3. Despliegue y Operación (FastAPI + Docker + Render)
 
 - **Framework de Alto Rendimiento:** Desarrollado en **FastAPI** para garantizar la velocidad de enrutamiento y la validación de esquemas mediante **Pydantic**.
-- **Modelo de IA:** Integrado mediante la librería oficial `google-genai` utilizando el modelo `gemini-2.5-flash` para mantener baja latencia y alta estabilidad.
+- **Modelo de IA:** Integrado mediante la librería oficial `google-genai` utilizando el modelo `gemini-3.5-flash` para mantener baja latencia y alta estabilidad.
 - **Optimización Asíncrona:** Las llamadas al modelo se ejecutan de manera asíncrona (`await client.aio.models.generate_content`) para evitar bloqueos del servidor y prevenir el rechazo por _Timeouts_ (>120s) comunes en pasarelas corporativas.
 - **Empaquetado y Entorno (Docker):** El entorno de ejecución está empaquetado mediante Docker, garantizando portabilidad absoluta, aislamiento de dependencias y paridad total entre el desarrollo local y la producción.
 - **Hosting (Render):** Desplegado en la nube utilizando el contenedor con endpoints expuestos bajo el prefijo `/v1/responses`.
