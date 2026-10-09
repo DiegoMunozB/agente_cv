@@ -1,8 +1,8 @@
 # agente_cv
 
-# Agente IA Representativo de Trayectoria Profesional (Reto IA Banorte)
+# Agente de CV (Reto IA Banorte)
 
-Agente virtual inteligente diseñado específicamente para el **Reto IA Banorte**, optimizado para actuar como un experto representante de la trayectoria profesional, formación académica y proyectos de **Diego Emiliano Muñoz Bernal**.
+Agente virtual inteligente diseñado específicamente para el **Reto IA Banorte**, optimizado para actuar como un experto representante de la trayectoria profesional, formación académica y proyectos de **Diego Muñoz (yo)**.
 
 ---
 
