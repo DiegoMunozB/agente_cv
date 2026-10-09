@@ -95,7 +95,7 @@ async def handle_open_response(request: ResponsesRequest, authorization: Optiona
 
         # Llamada asíncrona usando el SDK para no bloquear el servidor
         response = await client.aio.models.generate_content(
-            model="gemini-3.8-flash",
+            model="gemini-3.5-flash",
             contents=user_prompt,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
