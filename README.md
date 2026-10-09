@@ -42,7 +42,7 @@ _El agente detalla con precisión los logros en Multiplica utilizando formato en
 _Presentación formal del perfil profesional de Diego._
 ![Resumen Profesional](imagen2.png)
 
-### 3. Manejo de Restricciones y Anti-Alucinaciones
+### 3. Manejo de Restricciones
 
 _Ejemplo donde se le cuestiona sobre tecnologías no registradas (como Microsoft), respondiendo con neutralidad y redirigiendo hacia su stack cloud real (AWS/GCP)._
 ![Manejo de Desconocimiento](imagen3.png)
