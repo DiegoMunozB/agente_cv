@@ -1,4 +1,3 @@
-# agente_cv
 
 # Agente de CV (Reto IA Banorte)
 
