@@ -1,0 +1,77 @@
+{
+    "datos_personales": {
+      "nombre": "Diego Emiliano Muñoz Bernal",
+      "ubicacion": "Ciudad de México, México",
+      "telefono": "(+52) 56 1177 3668",
+      "email": "diego.emiliano.munoz.bernal@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/diego-munoz-bernal/",
+      "resumen": "Ingeniero en Tecnologías Computacionales con experiencia práctica en desarrollo backend, gestión de bases de datos, automatización de flujos de trabajo y sistemas de IA conversacional. Hábil en Python, Java y SQL para crear scripts serverless, optimización de consultas e ingesta de datos en AWS y GCP. Experiencia en automatización de flujos de trabajo, con fuerte disposición para colaborar en el desarrollo de sistemas backend e infraestructura de datos."
+    },
+    "educacion": [
+      {
+        "institucion": "Tecnológico de Monterrey (ITESM)",
+        "ubicacion": "CDMX, México",
+        "titulo": "Ingeniería en Tecnologías Computacionales (ITC)",
+        "periodo": "Agosto 2022 - Junio 2026",
+        "reconocimientos": "Beca al Talento Académico, Mentor Estudiantil (Peer Mentor)."
+      },
+      {
+        "institucion": "Universidad del País Vasco (UPV/EHU)",
+        "ubicacion": "Gipuzkoa, España",
+        "titulo": "Intercambio Académico Internacional - Grado en Ingeniería Informática",
+        "periodo": "Agosto 2025 - Diciembre 2026"
+      }
+    ],
+    "experiencia_profesional": [
+      {
+        "empresa": "Multiplica",
+        "modalidad": "Remoto",
+        "puesto": "Pasante de Operaciones de Negocio e Inteligencia de Negocios (Biz Ops & BI Intern)",
+        "periodo": "Diciembre 2024 - Mayo 2026",
+        "responsabilidades": [
+          "Desarrolló un agente de IA en n8n aprovechando la API de Gemini y webhooks REST, desplegado en Google Chat para automatizar la generación de documentos y flujos de trabajo dinámicos de múltiples pasos.",
+          "Construyó diversos flujos de trabajo de automatización end-to-end en Zoho CRM con Deluge, implementando funciones personalizadas, disparadores condicionales y webhooks.",
+          "Creó 2 dashboards de Zoho Analytics utilizando consultas SQL para estructurar fuentes de datos multifuncionales y rastrear métricas de rendimiento clave.",
+          "Ejecutó una migración de infraestructura de datos de AWS a GCP para pipelines de la API de Jira, desplegando 2 AWS Lambdas para extracción de datos y transicionando a una Cloud Function combinada con una arquitectura de datos de 3 capas (Raw, Silver, Gold)."
+        ]
+      }
+    ],
+    "proyectos_destacados": [
+      {
+        "nombre": "Pipeline de Benchmarking de NLP y Clasificación de Afectos",
+        "fecha": "Abril 2026 - Mayo 2026",
+        "descripcion": "Construyó un pipeline de benchmarking de NLP multiparadigma en Python para procesar 1,469 publicaciones políticas en redes sociales, evaluando ML tradicional, fine-tuning de transformadores (ROBERTuito, BETO) y prompting de LLMs (GPT-40-mini, GPT-3.5 Turbo, DeepSeek V4 Flash, Nemotron) utilizando métricas de evaluación Macro-F1."
+      },
+      {
+        "nombre": "Ganador - Salesforce Hackathon (Agente de IA)",
+        "fecha": "Agosto 2025",
+        "descripcion": "Diseñó un agente de IA interactivo utilizando capacidades de lenguaje natural para asistir a los visitantes con la navegación del sitio y consultas de huéspedes, ganando el 1er lugar por ejecución técnica y diseño."
+      },
+      {
+        "nombre": "Aplicación Web Full-Stack para Portal de Empleo",
+        "fecha": "Febrero 2025 - Junio 2025",
+        "descripcion": "Arquitectó una plataforma de reclutamiento end-to-end utilizando una arquitectura de 3 capas, empleando Java Quarkus para la lógica del servidor, MySQL para persistencia de datos confiable, y React para construir una interfaz de usuario dinámica."
+      },
+      {
+        "nombre": "Desarrollo de App Móvil iOS con Integración a Cisco Packet Tracer",
+        "fecha": "Agosto 2024 - Octubre 2024",
+        "descripcion": "Desarrolló una aplicación nativa para iOS usando Swift conectada a simulaciones de red de Cisco Packet Tracer para recuperar y mostrar métricas de red en tiempo real en una interfaz móvil."
+      },
+      {
+        "nombre": "Desarrollo de Juego en Unity con Integración a MySQL y HTML",
+        "fecha": "Febrero 2024 - Mayo 2024",
+        "descripcion": "Diseñó y programó un juego en Unity conectado a una base de datos MySQL y una interfaz web en HTML, mostrando exitosamente analíticas del juego, perfiles de usuario y datos de sesión en un navegador web."
+      }
+    ],
+    "idiomas": [
+      "Español (Nativo)",
+      "Inglés (B2)"
+    ],
+    "habilidades_tecnicas": {
+      "lenguajes_de_programacion": ["Python", "Java", "C#", "JavaScript", "Swift", "Deluge (Zoho)"],
+      "tecnologias_web_y_frontend": ["React", "HTML", "CSS"],
+      "bases_de_datos": ["MySQL", "PostgreSQL", "MongoDB"],
+      "cloud_y_devops": ["AWS (Lambda)", "GCP", "Docker"],
+      "herramientas_y_entorno": ["Unix", "Git", "GitHub", "Bitbucket", "n8n", "Gemini API", "REST APIs", "Jira", "Excel"]
+    }
+  }
