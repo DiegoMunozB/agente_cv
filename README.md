@@ -8,7 +8,7 @@ Agente virtual inteligente diseñado específicamente para el **Reto IA Banorte*
 
 ## Decisiones Técnicas y Arquitectura
 
-Para cumplir con los estrictos estándares de la plataforma de Banorte, la integración se diseñó bajo los siguientes pilares de ingeniería:
+La integración se diseñó bajo los siguientes pilares:
 
 ### 1. Diseño y Base de Conocimiento (Anti-Alucinaciones)
 
