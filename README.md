@@ -1,4 +1,3 @@
-
 # Agente de CV (Reto IA Banorte)
 
 Agente virtual inteligente diseñado específicamente para el **Reto IA Banorte**, optimizado para actuar como un experto representante de la trayectoria profesional, formación académica y proyectos de **Diego Muñoz (yo)**.
@@ -19,12 +18,13 @@ La integración se diseñó bajo los siguientes pilares:
 - **Estandarización JSON:** El servicio implementa el protocolo _Open Responses_, asegurando que la respuesta devuelva estrictamente la ruta esperada por la plataforma (`output[0].content[0].text`) con bloques del tipo `output_text`.
 - **Procesamiento de Mensajes:** Se implementó una lógica robusta en FastAPI para parsear dinámicamente las listas de mensajes anidados enviados por el frontend de Banorte.
 
-### 3. Despliegue y Operación en la Nube (FastAPI + Render)
+### 3. Despliegue y Operación (FastAPI + Docker + Render)
 
 - **Framework de Alto Rendimiento:** Desarrollado en **FastAPI** para garantizar la velocidad de enrutamiento y la validación de esquemas mediante **Pydantic**.
 - **Modelo de IA:** Integrado mediante la librería oficial `google-genai` utilizando el modelo `gemini-2.5-flash` para mantener baja latencia y alta estabilidad.
 - **Optimización Asíncrona:** Las llamadas al modelo se ejecutan de manera asíncrona (`await client.aio.models.generate_content`) para evitar bloqueos del servidor y prevenir el rechazo por _Timeouts_ (>120s) comunes en pasarelas corporativas.
-- **Hosting (Render):** Desplegado en un contenedor web en la nube con endpoints expuestos bajo el prefijo `/v1/responses`.
+- **Empaquetado y Entorno (Docker):** El entorno de ejecución está empaquetado mediante Docker, garantizando portabilidad absoluta, aislamiento de dependencias y paridad total entre el desarrollo local y la producción.
+- **Hosting (Render):** Desplegado en la nube utilizando el contenedor con endpoints expuestos bajo el prefijo `/v1/responses`.
 
 ---
 
